@@ -1,0 +1,36 @@
+<div id="main">
+	<header>
+		<h2>Robber Baron</h2>
+		<h1>Mr. Monopoly</h1>
+		<h2>Boardgame Legend</h2>
+	</header>
+	<p>
+		Rich "Uncle" Pennybags is the round old man in a top hat who serves as the mascot of the game Monopoly. Unsuccessful attempts to rechristen Rich "Uncle" Pennybags as <a href="http://en.wikipedia.org/wiki/Rich_Uncle_Pennybags" target="_blank" title="This goes to Wikipedia">Mr. Monopoly</a> are periodically made, though most people refer to him that way. He also appears in the related games Advance to Boardwalk, Free Parking, Don't Go to Jail, Monopoly City, Monopoly Junior, and Monopoly Deal.
+	</p>
+	<p>
+		The character first appeared on Chance and Community Chest cards in U.S. editions of Monopoly in 1936. The identity of the artist who designed the character has remained a mystery. Historian and author Philip Orbanes wrote in 2004 that it is believed that the character is based on either the calling cards of Albert Edward Richardson (Parker Brothers' first traveling salesman), the character of "Little Esky" from Esquire magazine, or a combination of the two. Orbanes later wrote, in 2006, that the character was also partially influenced by the stature and dress of financier and banker J. P. Morgan.
+	</p>
+	<p>
+		He was named as the sixth richest fictional character in the 2006 Forbes Fictional 15 list on its website and the ninth richest in 2011.
+	</p>
+
+	<div id="spaces">
+		<% @spaces.each do |space| %>
+			<h4><%= space.name %>: $<%= space.cost %>, <%=space.occupied %></h4>
+			<% end %>
+	</div>
+
+	<a href="http://facebook.com">
+		<%= image_tag "social-facebook.png", alt: "Facebook" %>
+	</a>
+	<a href="http://flickr.com">
+		<%= image_tag "social-flickr.png", alt: "Flickr" %>
+	</a>
+	<a href="http://foursquare.com">
+		<%= image_tag "social-foursquare.png", alt: "Foursquare" %>
+	</a>
+	<a href="http://twitter.com">
+		<%= image_tag "social-twitter.png", alt: "Twitter" %>
+	</a>
+
+</div>

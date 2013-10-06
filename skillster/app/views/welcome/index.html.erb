@@ -7,6 +7,11 @@
 		</p>
 		<div id="skills">
 			<h2>Skills</h2>
+			<ul>
+				<% @skills.each do |skill| %>
+					<li><%= link_to skill.name, skill %></li>
+				<% end %>
+			</ul>
 		</div><!-- END #skills -->
 	</div><!-- END #content -->
 </div><!-- END #container -->
